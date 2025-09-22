@@ -1,0 +1,28 @@
+import java.nio.file.Path;
+import java.util.Scanner;
+import java.util.Random;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter side 1: ");
+        int a = scanner.nextInt();
+        System.out.print("Enter side 2: ");
+        int b = scanner.nextInt();
+        System.out.print("Enter side 3: ");
+        int c = scanner.nextInt();
+        if (a + b > c && a + c > b && b + c > a) {
+            System.out.println("The sides form a valid triangle.");
+            if (a == b && b == c) {
+                System.out.println("It is an equilateral triangle.");
+            } else if (a == b || b == c || a == c) {
+                System.out.println("It is an isosceles triangle.");
+            } else {
+                System.out.println("It is a scalene triangle.");
+            }
+        } else {
+            System.out.println("The sides do not form a valid triangle.");
+        }
+
+        scanner.close();
+    }
+}
