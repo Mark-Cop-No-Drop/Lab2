@@ -4,11 +4,11 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter year: ");
+        System.out.print("year: ");
         int year = scanner.nextInt();
-        System.out.print("Enter month (1-12): ");
+        System.out.print("month: ");
         int month = scanner.nextInt();
-        System.out.print("Enter day: ");
+        System.out.print("day: ");
         int day = scanner.nextInt();
         if (isValidDate(year, month, day)) {
             System.out.println("The date is valid.");
