@@ -1,0 +1,18 @@
+import java.nio.file.Path;
+import java.util.Scanner;
+import java.util.Random;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("input age");
+        int AGE = scanner.nextInt();
+        System.out.println("input GPA");
+        int GPA = scanner.nextInt();
+        if(GPA>=3.0 && AGE>17){
+            System.out.println("Eligable");
+        }if(GPA>3.4 && AGE<18){
+            System.out.println("Special Considerations");
+            }else{
+            System.out.println("NOT ELLIGABLE");
+        }
+    }}
