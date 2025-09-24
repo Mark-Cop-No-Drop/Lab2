@@ -1,0 +1,36 @@
+import java.nio.file.Path;
+import java.util.Scanner;
+import java.util.Random;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("    Select Category");
+        System.out.println("1   -   Electronics");
+        System.out.println("2   -   Clothing");
+        System.out.println("3   -   Books");
+        System.out.println("4   -   Exit");
+        int Path = scanner.nextInt();
+        switch(Path){
+            case 1:
+                System.out.println("Electronics");
+                int Ebase = 500;
+                System.out.println("Base Price  :   " + Ebase);
+                System.out.println("Discount Price  :   " + (Ebase*0.9));
+                break;
+            case 2:
+                System.out.println("Clothing");
+                int Cbase = 100;
+                System.out.println("Base Price  :   " + Cbase);
+                System.out.println("Discount Price  :   " + (Cbase*0.8));
+                break;
+            case 3:
+                System.out.println("Books");
+                int Bbase = 80;
+                System.out.println("Base Price  :   " + Bbase);
+                System.out.println("Discount Price  :   " + (Bbase*0.95));
+                break;
+            default:
+                System.out.println("Goodbye!");
+                break;
+        }
+    }}
